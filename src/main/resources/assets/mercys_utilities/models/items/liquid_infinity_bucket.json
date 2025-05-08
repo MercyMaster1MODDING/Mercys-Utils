@@ -1,0 +1,6 @@
+{
+  "parent": "forge:item/bucket",
+  "textures": {
+    "fluid": "mercys_utilities:blocks/textures/block/liquid_infinity_still.png"
+  }
+}
