@@ -1,0 +1,16 @@
+[
+{
+  "modid": "mercys_utilities",
+  "name": "mercys_utilities",
+  "description": "this is a mod, YEET",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["MercyMaster1", JellyGoat],
+  "credits": "Mercy the Yeeter and Jelly the Artist",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

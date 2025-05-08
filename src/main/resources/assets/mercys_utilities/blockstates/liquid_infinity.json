@@ -1,0 +1,6 @@
+{
+    "variants": {
+      "normal": { "model": "mercys_utilities:assets/textures/blocks/liquid_infinity_flow.png" },
+      "inventory": { "model": "mercys_utilities:assets/textures/blocks/liquid_infinity_flow.png" }
+    }
+  }
