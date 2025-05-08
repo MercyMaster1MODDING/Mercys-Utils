@@ -7,11 +7,14 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fluids.BlockFluidClassic;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import org.apache.logging.log4j.Logger;
+
+import com.mercys_utilities.CommonProxy;
 import com.mercys_utilities.init.Init_registar;
 import com.mercys_utilities.library.fluid_library.liquid_infinity;
 import com.mercys_utilities.library.registar.liquid_infinity_registar;
@@ -22,6 +25,9 @@ public class MercysUtilites
     public static final String MODID = "mercys_utilities";
     public static final String NAME = "Mercys Utils";
     public static final String VERSION = "1.0";
+
+    @SidedProxy(clientSide = "com.mercys_utilities.ClientProxy", serverSide = "yourmod.package.CommonProxy")
+    public static CommonProxy proxy;
 
     private static Logger logger;
 
@@ -37,13 +43,14 @@ public class MercysUtilites
     {
         logger = event.getModLog();
         Init_registar.init();
+        proxy.preInit(event);
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
         // some example code
-        
+        proxy.init(event);
     }
     @SubscribeEvent
     public void onRegister(RegistryEvent.Register<Block> event) {

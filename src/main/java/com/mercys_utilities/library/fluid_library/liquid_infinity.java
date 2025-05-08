@@ -6,13 +6,13 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.Fluid;
 
 public class liquid_infinity extends CustomFluids {
-    public static Fluid INSTANCE = new liquid_infinity();
+    public static final Fluid LIQUID_INFINITY = new liquid_infinity();
 
      public liquid_infinity() {
         super(
             "liquid_infinity",
-            new ResourceLocation("mercys_utilities", "blocks/liquid_infinity_still"),
-            new ResourceLocation("mercys_utilities", "blocks/liquid_infinity_flow")
+            new ResourceLocation("mercys_utilities:textures/blocks/liquid_infinity_still"),
+            new ResourceLocation("mercys_utilities:textures/blocks/liquid_infinity_flow")
         );
          
         this.setDensity(2000);
