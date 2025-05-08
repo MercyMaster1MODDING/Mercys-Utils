@@ -1,0 +1,7 @@
+{
+    "parent": "forge:block/fluids",
+    "textures": {
+      "still": "mercys_utilities:blocks/liquid_infinity_still",
+      "flowing": "mercys_utilities:blocks/liquid_infinity_flow"
+    }
+  }
