@@ -5,10 +5,10 @@ import com.mercys_utilities.library.CustomFluids;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.Fluid;
 
-public class liquid_infinity extends CustomFluids {
-    public static final Fluid LIQUID_INFINITY = new liquid_infinity();
+public class LiquidInfinity extends CustomFluids {
+    public static final Fluid LIQUID_INFINITY = new LiquidInfinity();
 
-     public liquid_infinity() {
+     public LiquidInfinity() {
         super(
             "liquid_infinity",
             new ResourceLocation("mercys_utilities:textures/blocks/liquid_infinity_still"),

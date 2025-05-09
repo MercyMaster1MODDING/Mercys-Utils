@@ -16,8 +16,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.mercys_utilities.CommonProxy;
 import com.mercys_utilities.init.Init_registar;
-import com.mercys_utilities.library.fluid_library.liquid_infinity;
-import com.mercys_utilities.library.registar.liquid_infinity_registar;
+import com.mercys_utilities.library.fluid_library.LiquidInfinity;
 
 @Mod(modid = MercysUtilites.MODID, name = MercysUtilites.NAME, version = MercysUtilites.VERSION)
 public class MercysUtilites
@@ -55,7 +54,7 @@ public class MercysUtilites
     @SubscribeEvent
     public void onRegister(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
-            
-        new BlockFluidClassic(new liquid_infinity(), Material.WATER).setRegistryName("liquid_infinity_block"));
+        
+        new BlockFluidClassic(new LiquidInfinity(), Material.WATER).setRegistryName("liquid_infinity_block"));
     }
 }
