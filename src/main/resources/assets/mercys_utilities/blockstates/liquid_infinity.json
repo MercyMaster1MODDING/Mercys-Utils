@@ -1,6 +1,11 @@
 {
-    "variants": {
-      "normal": { "model": "forge:fluid" },
-      "fluid": { "model": "forge:fluid" }
-    }
-  }
+	"forge_marker": 1,
+	"variants": {
+		"fluid": {
+			"model": "forge:fluid",
+			"custom": {
+				"fluid": "liquid_infinity"
+			}
+		}
+	}
+}
